@@ -33,23 +33,23 @@ export function LandingView({ onStart }: LandingViewProps) {
       <style>{FLOAT_STYLES}</style>
       
       {/* Sleek UI Asset Containers (Professional Vertical Sidebar) */}
-      <div style={{ position: 'absolute', top: '15%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-1 8s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
+      <div className="hide-on-mobile" style={{ position: 'absolute', top: '15%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-1 8s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
         <img src="/palm.jpg" style={{ width: '140%', opacity: 0.7, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
       </div>
       
-      <div style={{ position: 'absolute', top: '30%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-2 7s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
+      <div className="hide-on-mobile" style={{ position: 'absolute', top: '30%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-2 7s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
         <img src="/energy_drink.jpg" style={{ width: '180%', opacity: 0.8, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
       </div>
       
-      <div style={{ position: 'absolute', top: '45%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-4 9s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
+      <div className="hide-on-mobile" style={{ position: 'absolute', top: '45%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-4 9s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
         <img src="/laptop.jpg" style={{ width: '150%', opacity: 0.7, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
       </div>
 
-      <div style={{ position: 'absolute', top: '60%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-1 10s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
+      <div className="hide-on-mobile" style={{ position: 'absolute', top: '60%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-1 10s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
         <img src="/plane.jpg" style={{ width: '160%', opacity: 0.6, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
       </div>
 
-      <div style={{ position: 'absolute', top: '75%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-2 8s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
+      <div className="hide-on-mobile" style={{ position: 'absolute', top: '75%', left: '2%', width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-2 8s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)', zIndex: 0 }}>
         <img src="/pizza.jpg" style={{ width: '160%', opacity: 0.8, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
       </div>
       

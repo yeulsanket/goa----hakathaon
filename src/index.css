@@ -182,16 +182,16 @@ input {
 
 /* Typography */
 .hero-text {
-  font-size: clamp(3rem, 8vw, 5rem);
+  font-size: clamp(2rem, 8vw, 5rem);
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: -0.03em;
   margin-bottom: 1rem;
 }
 
 .hero-subtext {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 3vw, 1.5rem);
   color: var(--color-muted);
   font-weight: 500;
   margin-bottom: 2rem;
@@ -199,7 +199,7 @@ input {
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
@@ -211,6 +211,24 @@ input {
   font-size: 0.875rem;
   color: var(--color-muted);
   text-transform: uppercase;
+}
+
+/* Mobile Utilities */
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+.desktop-sticky {
+  position: sticky;
+  top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .desktop-sticky {
+    position: static;
+  }
 }
 
 /* Buttons */

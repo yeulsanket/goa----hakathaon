@@ -192,7 +192,7 @@ function App() {
 
         {state === 'CONFIGURING' && (
           <div className="grid-layout" style={{ minHeight: 'auto', gap: '4rem', alignItems: 'start' }}>
-            <div style={{ position: 'sticky', top: '2rem', display: 'flex', justifyContent: 'center' }}>
+            <div className="desktop-sticky" style={{ display: 'flex', justifyContent: 'center' }}>
               <Tilt 
                 tiltMaxAngleX={5} 
                 tiltMaxAngleY={5} 
