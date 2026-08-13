@@ -31,15 +31,20 @@ export const PfpFrame = forwardRef<HTMLDivElement, PfpFrameProps>(({ data }, ref
         />
       )}
 
-      {/* Frame Elements */}
-      <div style={{
-        position: 'absolute',
-        top: '40px', left: '40px', right: '40px', bottom: '40px',
-        border: `4px solid ${primaryColor}`,
-        borderRadius: '50px',
-        pointerEvents: 'none',
-        zIndex: 1
-      }} />
+      {/* Frame Elements Overlay */}
+      <img 
+        src="/pfp-frame.jpg"
+        alt="Frame Overlay"
+        style={{
+          position: 'absolute',
+          top: 0, left: 0, width: '100%', height: '100%',
+          objectFit: 'cover',
+          mixBlendMode: 'screen',
+          pointerEvents: 'none',
+          zIndex: 1,
+          opacity: 0.95
+        }}
+      />
 
       {/* Top Left Label */}
       <div style={{

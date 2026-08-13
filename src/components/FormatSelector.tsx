@@ -16,21 +16,38 @@ export function FormatSelector({ onSelect, imageUrl }: FormatSelectorProps) {
           className="format-option"
           onClick={() => onSelect('PFP')}
           style={{
-            border: '1px solid var(--color-border)',
+            border: '2px solid var(--color-primary)',
             borderRadius: 'var(--border-radius-lg)',
             padding: '2rem',
             cursor: 'pointer',
             textAlign: 'center',
             transition: 'all 0.2s',
-            backgroundColor: 'rgba(255, 255, 255, 0.02)'
+            backgroundColor: 'rgba(255, 242, 0, 0.05)',
+            position: 'relative'
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.borderColor = 'var(--color-fg)';
+            e.currentTarget.style.boxShadow = '0 0 20px rgba(255, 242, 0, 0.2)';
+            e.currentTarget.style.transform = 'translateY(-4px)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.borderColor = 'var(--color-border)';
+            e.currentTarget.style.boxShadow = 'none';
+            e.currentTarget.style.transform = 'translateY(0)';
           }}
         >
+          <div style={{
+            position: 'absolute',
+            top: '-12px',
+            right: '20px',
+            backgroundColor: 'var(--color-primary)',
+            color: 'var(--color-bg)',
+            padding: '4px 12px',
+            borderRadius: '999px',
+            fontSize: '0.75rem',
+            fontWeight: 'bold',
+            fontFamily: 'var(--font-mono)'
+          }}>
+            NEW VIBE
+          </div>
           <div className="flex-center flex-col gap-4">
             <div style={{
               width: '120px',
