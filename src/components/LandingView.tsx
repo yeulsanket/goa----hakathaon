@@ -39,12 +39,17 @@ export function LandingView({ onStart }: LandingViewProps) {
       {/* Interactive Wave Section */}
       <img src="/waves.jpg" className="wave-glow" style={{ position: 'absolute', top: '10%', right: '-5%', width: '600px', opacity: 0.3, mixBlendMode: 'screen', animation: 'float-3 5s ease-in-out infinite', zIndex: 5 }} alt="Tropical Wave" title="Catch the wave!" />
 
+      {/* Floating Particles (Digital Sparks) */}
+      <div className="particle" style={{ top: '30%', left: '20%', width: '4px', height: '4px', animation: 'float-1 4s infinite alternate' }} />
+      <div className="particle" style={{ top: '70%', right: '25%', width: '6px', height: '6px', backgroundColor: 'var(--color-secondary)', animation: 'float-2 6s infinite alternate' }} />
+      <div className="particle" style={{ top: '40%', right: '15%', width: '3px', height: '3px', backgroundColor: 'var(--color-success)', animation: 'float-3 3s infinite alternate' }} />
+
       <div className="flex-col" style={{ gap: '2rem' }}>
         <div>
-          <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-primary)', fontWeight: 'bold', marginBottom: '1rem' }}>
+          <div className="glitch-hover" style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-primary)', fontWeight: 'bold', marginBottom: '1rem', cursor: 'default' }}>
             HH GOA 2026
           </div>
-          <h1 className="hero-text">
+          <h1 className="hero-text text-gradient-animated">
             YOUR BUILDER ID.<br/>
             READY TO SHIP.
           </h1>
@@ -54,7 +59,7 @@ export function LandingView({ onStart }: LandingViewProps) {
         </div>
         
         <div>
-          <button className="btn-primary" onClick={onStart} style={{ marginBottom: '2.5rem' }}>
+          <button className="btn-primary pulse-glow" onClick={onStart} style={{ marginBottom: '2.5rem' }}>
             CREATE MY FRAME <ArrowRight size={20} />
           </button>
           
