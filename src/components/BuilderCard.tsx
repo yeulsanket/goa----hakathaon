@@ -1,5 +1,6 @@
 import { forwardRef } from 'react';
 import type { BuilderData } from '../types/builder';
+import { ENERGY_OPTIONS } from '../types/builder';
 import { MapPin } from 'lucide-react';
 
 const TwitterIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>;
@@ -123,7 +124,7 @@ export const BuilderCard = forwardRef<HTMLDivElement, BuilderCardProps>(({ data 
         }}>
           <div style={{ fontFamily: "'JetBrains Mono', monospace", color: '#fff', fontSize: '18px', lineHeight: '1.4' }}>
             {`> ${data.stack || 'Code enthusiast.'}`}<br/><br/>
-            {`> Building things that break limits.`}<br/><br/>
+            {`> ENERGY: ${ENERGY_OPTIONS.find(e => e.id === data.energy)?.icon || '⚡'} ${ENERGY_OPTIONS.find(e => e.id === data.energy)?.label || 'SHIPPER'}`}<br/><br/>
             {`> ${data.title || 'Obsessed with solving real-world problems.'}`}
           </div>
         </div>

@@ -116,7 +116,7 @@ export function BuilderForm({ data, updateData, onGenerate }: BuilderFormProps) 
                   padding: '0.5rem 1rem',
                   borderRadius: '999px',
                   border: `1px solid ${data.energy === energy.id ? energy.color : 'var(--color-border)'}`,
-                  backgroundColor: data.energy === energy.id ? `${energy.color}20` : 'transparent',
+                  backgroundColor: data.energy === energy.id ? `${energy.color}20` : 'rgba(0,0,0,0.2)',
                   color: data.energy === energy.id ? energy.color : 'var(--color-muted)',
                   fontFamily: 'var(--font-mono)',
                   fontSize: '0.75rem',
