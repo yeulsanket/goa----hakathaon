@@ -103,7 +103,7 @@ export function LandingView({ onStart }: LandingViewProps) {
         </div>
       </div>
 
-      <div className="flex-center" style={{ position: 'relative', alignSelf: 'flex-start', marginTop: '10vh' }}>
+      <div className="flex-center" style={{ position: 'relative' }}>
         {/* Decorative elements for the preview side */}
         <div 
           className="animate-spin-slow"
