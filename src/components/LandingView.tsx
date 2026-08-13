@@ -35,7 +35,9 @@ export function LandingView({ onStart }: LandingViewProps) {
       {/* Floating Real Images */}
       <img src="/palm.jpg" style={{ position: 'absolute', top: '5%', left: '0%', width: '300px', opacity: 0.4, mixBlendMode: 'screen', animation: 'float-1 6s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
       <img src="/plane.jpg" style={{ position: 'absolute', bottom: '15%', left: '5%', width: '250px', opacity: 0.35, mixBlendMode: 'screen', animation: 'float-2 7s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
-      <img src="/waves.jpg" style={{ position: 'absolute', top: '15%', right: '0%', width: '400px', opacity: 0.3, mixBlendMode: 'screen', animation: 'float-3 5s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
+      
+      {/* Interactive Wave Section */}
+      <img src="/waves.jpg" className="wave-glow" style={{ position: 'absolute', top: '10%', right: '-5%', width: '600px', opacity: 0.3, mixBlendMode: 'screen', animation: 'float-3 5s ease-in-out infinite', zIndex: 5 }} alt="Tropical Wave" title="Catch the wave!" />
 
       <div className="flex-col" style={{ gap: '2rem' }}>
         <div>

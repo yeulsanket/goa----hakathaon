@@ -83,6 +83,18 @@ input {
   animation: spin 3s linear infinite;
 }
 
+.wave-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.wave-glow:hover {
+  opacity: 0.9 !important;
+  filter: brightness(1.8) contrast(1.2) drop-shadow(0 0 30px rgba(0, 255, 170, 0.5));
+  transform: scale(1.05);
+  z-index: 10 !important;
+}
+
 /* General Layout Utilities */
 .container {
   max-width: 1440px;
