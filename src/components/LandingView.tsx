@@ -32,11 +32,10 @@ export function LandingView({ onStart }: LandingViewProps) {
     <div className="grid-layout animate-fade-in" style={{ position: 'relative' }}>
       <style>{FLOAT_STYLES}</style>
       
-      {/* Floating Background Elements */}
-      <div style={{ position: 'absolute', top: '10%', left: '5%', fontSize: '4rem', opacity: 0.2, animation: 'float-1 6s ease-in-out infinite', zIndex: -1 }}>🌴</div>
-      <div style={{ position: 'absolute', bottom: '15%', left: '10%', fontSize: '3rem', opacity: 0.15, animation: 'float-2 7s ease-in-out infinite', zIndex: -1 }}>🥥</div>
-      <div style={{ position: 'absolute', top: '20%', right: '10%', fontSize: '3.5rem', opacity: 0.15, animation: 'float-3 5s ease-in-out infinite', zIndex: -1, filter: 'grayscale(0.5)' }}>🛩️</div>
-      <div style={{ position: 'absolute', bottom: '25%', right: '5%', fontSize: '5rem', opacity: 0.1, animation: 'float-4 8s ease-in-out infinite', zIndex: -1 }}>🌊</div>
+      {/* Floating Real Images */}
+      <img src="/palm.jpg" style={{ position: 'absolute', top: '5%', left: '0%', width: '300px', opacity: 0.4, mixBlendMode: 'screen', animation: 'float-1 6s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
+      <img src="/plane.jpg" style={{ position: 'absolute', bottom: '15%', left: '5%', width: '250px', opacity: 0.35, mixBlendMode: 'screen', animation: 'float-2 7s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
+      <img src="/waves.jpg" style={{ position: 'absolute', top: '15%', right: '0%', width: '400px', opacity: 0.3, mixBlendMode: 'screen', animation: 'float-3 5s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
 
       <div className="flex-col" style={{ gap: '2rem' }}>
         <div>
