@@ -22,43 +22,47 @@ export function BuilderForm({ data, updateData, onGenerate }: BuilderFormProps) 
       <form onSubmit={handleSubmit} className="flex-col gap-6">
         <h3 className="section-title text-center" style={{ marginBottom: '2rem' }}>YOUR BUILDER ID.</h3>
         
-        <div className="form-group">
-          <label className="form-label">NAME</label>
-          <input 
-            type="text" 
-            className="form-input" 
-            placeholder="Your name" 
-            value={data.name}
-            onChange={(e) => updateData({ name: e.target.value })}
-            required
-            maxLength={25}
-          />
-        </div>
+        {data.format === 'BUILDER_ID' && (
+          <>
+            <div className="form-group">
+              <label className="form-label">NAME</label>
+              <input 
+                type="text" 
+                className="form-input" 
+                placeholder="Your name" 
+                value={data.name}
+                onChange={(e) => updateData({ name: e.target.value })}
+                required
+                maxLength={25}
+              />
+            </div>
 
-        <div className="form-group">
-          <label className="form-label">STACK / ROLE</label>
-          <input 
-            type="text" 
-            className="form-input" 
-            placeholder="e.g. AI Engineer · React · Solidity" 
-            value={data.stack}
-            onChange={(e) => updateData({ stack: e.target.value })}
-            required
-            maxLength={40}
-          />
-        </div>
+            <div className="form-group">
+              <label className="form-label">STACK / ROLE</label>
+              <input 
+                type="text" 
+                className="form-input" 
+                placeholder="e.g. AI Engineer · React · Solidity" 
+                value={data.stack}
+                onChange={(e) => updateData({ stack: e.target.value })}
+                required
+                maxLength={40}
+              />
+            </div>
 
-        <div className="form-group">
-          <label className="form-label">LOCATION / VIBE (OPTIONAL)</label>
-          <input 
-            type="text" 
-            className="form-input" 
-            placeholder="e.g. Goa, Ship Mode" 
-            value={data.location}
-            onChange={(e) => updateData({ location: e.target.value })}
-            maxLength={20}
-          />
-        </div>
+            <div className="form-group">
+              <label className="form-label">LOCATION / VIBE (OPTIONAL)</label>
+              <input 
+                type="text" 
+                className="form-input" 
+                placeholder="e.g. Goa, Ship Mode" 
+                value={data.location}
+                onChange={(e) => updateData({ location: e.target.value })}
+                maxLength={20}
+              />
+            </div>
+          </>
+        )}
 
         <div className="form-group">
           <label className="form-label">BUILDER TITLE</label>
@@ -82,27 +86,31 @@ export function BuilderForm({ data, updateData, onGenerate }: BuilderFormProps) 
           </div>
         </div>
 
-        <div className="form-group" style={{ marginTop: '1rem' }}>
-          <label className="form-label">SOCIAL (OPTIONAL)</label>
-          <div className="flex-col gap-2">
-            <input type="text" className="form-input" placeholder="X (Twitter) Handle" value={data.twitter || ''} onChange={(e) => updateData({ twitter: e.target.value })} maxLength={30} />
-            <input type="text" className="form-input" placeholder="GitHub Handle" value={data.github || ''} onChange={(e) => updateData({ github: e.target.value })} maxLength={40} />
-            <input type="text" className="form-input" placeholder="LinkedIn Handle" value={data.linkedin || ''} onChange={(e) => updateData({ linkedin: e.target.value })} maxLength={40} />
-            <input type="text" className="form-input" placeholder="Instagram Handle" value={data.instagram || ''} onChange={(e) => updateData({ instagram: e.target.value })} maxLength={30} />
-          </div>
-        </div>
+        {data.format === 'BUILDER_ID' && (
+          <>
+            <div className="form-group" style={{ marginTop: '1rem' }}>
+              <label className="form-label">SOCIAL (OPTIONAL)</label>
+              <div className="flex-col gap-2">
+                <input type="text" className="form-input" placeholder="X (Twitter) Handle" value={data.twitter || ''} onChange={(e) => updateData({ twitter: e.target.value })} maxLength={30} />
+                <input type="text" className="form-input" placeholder="GitHub Handle" value={data.github || ''} onChange={(e) => updateData({ github: e.target.value })} maxLength={40} />
+                <input type="text" className="form-input" placeholder="LinkedIn Handle" value={data.linkedin || ''} onChange={(e) => updateData({ linkedin: e.target.value })} maxLength={40} />
+                <input type="text" className="form-input" placeholder="Instagram Handle" value={data.instagram || ''} onChange={(e) => updateData({ instagram: e.target.value })} maxLength={30} />
+              </div>
+            </div>
 
-        <div className="form-group">
-          <label className="form-label">QUOTE (OPTIONAL)</label>
-          <input 
-            type="text" 
-            className="form-input" 
-            placeholder="A short builder quote..." 
-            value={data.quote || ''}
-            onChange={(e) => updateData({ quote: e.target.value })}
-            maxLength={60}
-          />
-        </div>
+            <div className="form-group">
+              <label className="form-label">QUOTE (OPTIONAL)</label>
+              <input 
+                type="text" 
+                className="form-input" 
+                placeholder="A short builder quote..." 
+                value={data.quote || ''}
+                onChange={(e) => updateData({ quote: e.target.value })}
+                maxLength={60}
+              />
+            </div>
+          </>
+        )}
 
         <div className="form-group" style={{ marginTop: '1rem' }}>
           <label className="form-label" style={{ marginBottom: '1rem' }}>BUILDER ENERGY</label>
@@ -134,9 +142,9 @@ export function BuilderForm({ data, updateData, onGenerate }: BuilderFormProps) 
             type="submit" 
             className="btn-primary" 
             style={{ width: '100%' }}
-            disabled={!data.name || !data.stack || !data.title}
+            disabled={data.format === 'BUILDER_ID' ? (!data.name || !data.stack || !data.title) : !data.title}
           >
-            BUILD MY ID <ArrowRight size={20} />
+            {data.format === 'BUILDER_ID' ? 'BUILD MY ID' : 'DOWNLOAD FRAME'} <ArrowRight size={20} />
           </button>
         </div>
       </form>
