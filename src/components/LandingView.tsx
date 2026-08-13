@@ -32,12 +32,19 @@ export function LandingView({ onStart }: LandingViewProps) {
     <div className="grid-layout animate-fade-in" style={{ position: 'relative' }}>
       <style>{FLOAT_STYLES}</style>
       
-      {/* Floating Real Images */}
-      <img src="/palm.jpg" style={{ position: 'absolute', top: '5%', left: '0%', width: '300px', opacity: 0.4, mixBlendMode: 'screen', animation: 'float-1 6s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
-      <img src="/plane.jpg" style={{ position: 'absolute', bottom: '15%', left: '5%', width: '250px', opacity: 0.35, mixBlendMode: 'screen', animation: 'float-2 7s ease-in-out infinite', zIndex: 0, pointerEvents: 'none' }} alt="" />
+      {/* Sleek UI Asset Containers (Professional Bento/Orb Style) */}
+      <div style={{ position: 'absolute', top: '10%', left: '2%', width: '160px', height: '160px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-1 8s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+        <img src="/palm.jpg" style={{ width: '140%', opacity: 0.7, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
+      </div>
       
-      {/* Interactive Wave Section */}
-      <img src="/waves.jpg" className="wave-glow" style={{ position: 'absolute', top: '10%', right: '-5%', width: '600px', opacity: 0.3, mixBlendMode: 'screen', animation: 'float-3 5s ease-in-out infinite', zIndex: 5 }} alt="Tropical Wave" title="Catch the wave!" />
+      <div style={{ position: 'absolute', bottom: '15%', left: '8%', width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-2 9s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+        <img src="/plane.jpg" style={{ width: '160%', opacity: 0.6, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
+      </div>
+      
+      {/* Interactive Wave UI Component */}
+      <div className="wave-glow" style={{ position: 'absolute', top: '15%', right: '2%', width: '280px', height: '380px', borderRadius: '32px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(0,0,0,0.2)', backdropFilter: 'blur(16px)', animation: 'float-3 10s ease-in-out infinite', zIndex: 5, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }} title="Catch the wave!">
+        <img src="/waves.jpg" style={{ width: '200%', opacity: 0.5, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="Tropical Wave" />
+      </div>
 
       {/* Floating Particles (Digital Sparks) */}
       <div className="particle" style={{ top: '30%', left: '20%', width: '4px', height: '4px', animation: 'float-1 4s infinite alternate' }} />
