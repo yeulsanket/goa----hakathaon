@@ -53,10 +53,7 @@ export function LandingView({ onStart }: LandingViewProps) {
         <img src="/pizza.jpg" style={{ width: '160%', opacity: 0.8, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
       </div>
       
-      {/* Interactive Wave UI Component */}
-      <div className="wave-glow" style={{ position: 'absolute', bottom: '3%', left: '15%', right: '15%', height: '100px', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(0,0,0,0.2)', backdropFilter: 'blur(16px)', zIndex: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }} title="Catch the wave!">
-        <img src="/waves.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="Tropical Wave" />
-      </div>
+
 
       {/* Floating Particles (Digital Sparks) */}
       <div className="particle" style={{ top: '30%', left: '20%', width: '4px', height: '4px', animation: 'float-1 4s infinite alternate' }} />
