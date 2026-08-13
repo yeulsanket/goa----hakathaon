@@ -54,8 +54,8 @@ export function LandingView({ onStart }: LandingViewProps) {
       </div>
       
       {/* Interactive Wave UI Component */}
-      <div className="wave-glow" style={{ position: 'absolute', top: '15%', right: '2%', width: '280px', height: '380px', borderRadius: '32px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(0,0,0,0.2)', backdropFilter: 'blur(16px)', animation: 'float-3 10s ease-in-out infinite', zIndex: 5, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }} title="Catch the wave!">
-        <img src="/waves.jpg" style={{ width: '200%', opacity: 0.5, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="Tropical Wave" />
+      <div className="wave-glow" style={{ position: 'absolute', bottom: '3%', left: '15%', right: '15%', height: '100px', borderRadius: '24px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(0,0,0,0.2)', backdropFilter: 'blur(16px)', zIndex: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }} title="Catch the wave!">
+        <img src="/waves.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.5, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="Tropical Wave" />
       </div>
 
       {/* Floating Particles (Digital Sparks) */}
