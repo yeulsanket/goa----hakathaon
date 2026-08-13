@@ -1,4 +1,4 @@
-export const SHARE_TEXT = "Goa called. I answered. 🌴⚡\nBuilder mode: ON.\n#FrameInGoa";
+export const SHARE_TEXT = "2:47 PM STUDIO mode activated. ⚡️\nReady to break limits in Goa. Let's ship.\n\n#FrameInGoa";
 
 export async function shareToX(imageBlob?: Blob) {
   // If we have a blob and the browser supports Web Share with files
