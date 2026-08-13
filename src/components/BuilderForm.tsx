@@ -12,7 +12,9 @@ interface BuilderFormProps {
 export function BuilderForm({ data, updateData, onGenerate }: BuilderFormProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (data.name && data.stack && data.title) {
+    if (data.format === 'BUILDER_ID' && data.name && data.stack && data.title) {
+      onGenerate();
+    } else if (data.format === 'PFP' && data.title) {
       onGenerate();
     }
   };
