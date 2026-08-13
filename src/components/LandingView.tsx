@@ -8,6 +8,13 @@ const CAPTIONS = [
   "Code, coconuts, and shipping real-world solutions. 🥥✨"
 ];
 
+const FLOAT_STYLES = `
+  @keyframes float-1 { 0% { transform: translateY(0px) rotate(-10deg); } 50% { transform: translateY(-20px) rotate(-5deg); } 100% { transform: translateY(0px) rotate(-10deg); } }
+  @keyframes float-2 { 0% { transform: translateY(0px) rotate(15deg); } 50% { transform: translateY(-30px) rotate(20deg); } 100% { transform: translateY(0px) rotate(15deg); } }
+  @keyframes float-3 { 0% { transform: translateY(0px) rotate(-45deg); } 50% { transform: translateY(-15px) rotate(-40deg); } 100% { transform: translateY(0px) rotate(-45deg); } }
+  @keyframes float-4 { 0% { transform: translateY(0px) rotate(5deg); } 50% { transform: translateY(-25px) rotate(0deg); } 100% { transform: translateY(0px) rotate(5deg); } }
+`;
+
 interface LandingViewProps {
   onStart: () => void;
 }
@@ -22,7 +29,15 @@ export function LandingView({ onStart }: LandingViewProps) {
     return () => clearInterval(timer);
   }, []);
   return (
-    <div className="grid-layout animate-fade-in">
+    <div className="grid-layout animate-fade-in" style={{ position: 'relative' }}>
+      <style>{FLOAT_STYLES}</style>
+      
+      {/* Floating Background Elements */}
+      <div style={{ position: 'absolute', top: '10%', left: '5%', fontSize: '4rem', opacity: 0.2, animation: 'float-1 6s ease-in-out infinite', zIndex: -1 }}>🌴</div>
+      <div style={{ position: 'absolute', bottom: '15%', left: '10%', fontSize: '3rem', opacity: 0.15, animation: 'float-2 7s ease-in-out infinite', zIndex: -1 }}>🥥</div>
+      <div style={{ position: 'absolute', top: '20%', right: '10%', fontSize: '3.5rem', opacity: 0.15, animation: 'float-3 5s ease-in-out infinite', zIndex: -1, filter: 'grayscale(0.5)' }}>🛩️</div>
+      <div style={{ position: 'absolute', bottom: '25%', right: '5%', fontSize: '5rem', opacity: 0.1, animation: 'float-4 8s ease-in-out infinite', zIndex: -1 }}>🌊</div>
+
       <div className="flex-col" style={{ gap: '2rem' }}>
         <div>
           <div style={{ fontFamily: 'var(--font-mono)', color: 'var(--color-primary)', fontWeight: 'bold', marginBottom: '1rem' }}>
