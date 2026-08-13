@@ -42,7 +42,8 @@ export const PfpFrame = forwardRef<HTMLDivElement, PfpFrameProps>(({ data }, ref
           mixBlendMode: 'screen',
           pointerEvents: 'none',
           zIndex: 1,
-          opacity: 0.95
+          opacity: 0.95,
+          transform: 'scale(1.4)'
         }}
       />
 
