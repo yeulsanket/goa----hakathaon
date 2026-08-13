@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Kalam:wght@700&family=Erica+One&display=swap');
 
 :root {
-  /* HH Goa 2026 Tropical Colors */
-  --color-bg: #006e33; /* Dark green */
+  /* Oceanic Neon Goa Palette */
+  --color-bg: #030a16; /* Deep ocean black */
   --color-fg: #ffffff; /* White */
-  --color-primary: #fff200; /* Vibrant yellow */
-  --color-secondary: #ff0055; /* Hot pink */
+  --color-primary: #00f0ff; /* Neon cyan */
+  --color-secondary: #ff00a0; /* Hot pink accent */
   --color-accent: #000000; /* Black */
   
-  --color-muted: #a3e6b5;
-  --color-border: #004d22;
-  --color-success: #10b981;
-  --color-error: #ef4444;
+  --color-muted: #8ab4f8;
+  --color-border: #0a2540;
+  --color-success: #00ffaa;
+  --color-error: #ff3366;
 
   --font-sans: 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -32,6 +32,11 @@
 body {
   font-family: var(--font-sans);
   background-color: var(--color-bg);
+  background-image: url('/waves.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: screen;
   color: var(--color-fg);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
