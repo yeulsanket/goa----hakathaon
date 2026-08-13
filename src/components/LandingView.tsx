@@ -40,6 +40,18 @@ export function LandingView({ onStart }: LandingViewProps) {
       <div style={{ position: 'absolute', bottom: '15%', left: '8%', width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-2 9s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
         <img src="/plane.jpg" style={{ width: '160%', opacity: 0.6, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
       </div>
+
+      <div style={{ position: 'absolute', top: '5%', left: '35%', width: '100px', height: '100px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-4 7s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+        <img src="/energy_drink.jpg" style={{ width: '180%', opacity: 0.8, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
+      </div>
+
+      <div style={{ position: 'absolute', bottom: '25%', left: '35%', width: '140px', height: '140px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-1 11s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+        <img src="/laptop.jpg" style={{ width: '150%', opacity: 0.7, mixBlendMode: 'screen', pointerEvents: 'none' }} alt="" />
+      </div>
+
+      <div style={{ position: 'absolute', top: '50%', right: '28%', width: '110px', height: '110px', borderRadius: '50%', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)', background: 'rgba(0,0,0,0.2)', animation: 'float-2 6s ease-in-out infinite', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}>
+        <img src="/pizza.jpg" style={{ width: '160%', opacity: 0.8, mixBlendMode: 'screen', pointerEvents: 'none', transform: 'rotate(15deg)' }} alt="" />
+      </div>
       
       {/* Interactive Wave UI Component */}
       <div className="wave-glow" style={{ position: 'absolute', top: '15%', right: '2%', width: '280px', height: '380px', borderRadius: '32px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)', background: 'rgba(0,0,0,0.2)', backdropFilter: 'blur(16px)', animation: 'float-3 10s ease-in-out infinite', zIndex: 5, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 20px 40px rgba(0,0,0,0.4)' }} title="Catch the wave!">
