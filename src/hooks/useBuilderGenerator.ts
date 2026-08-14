@@ -77,6 +77,7 @@ export function useBuilderGenerator() {
         instagram: '',
         quote: '',
       });
+      setError(null);
       setState('IDLE');
     }
   }, []);
